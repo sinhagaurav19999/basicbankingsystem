@@ -1,0 +1,175 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 55px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 9px 25px;
+}
+#logo img{
+    height: 85px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai';  
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+   color: white;
+   display: block;
+   font-family: 'STIX Two Text', serif;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 150%;
+    padding: 6px 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: fixed;
+    background: url('../images/bg.jpg');
+    height: 300%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.92;
+}
+
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:ghostwhite;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 3.9rem;
+    padding: 4px;
+}
+.btn{
+    position: relative;
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(250, 14, 112);
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: 359; */
+    border: none;
+    text-transform: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 11px;
+    opacity: 0.84;
+}
+.btn:hover
+{
+    box-shadow: 0 4px 2px 0 whitesmoke inset, 0 4px 10px 0 whitesmoke,
+                0 4px 2px 0 whitesmoke inset, 0 4px 10px 0 whitesmoke;
+}
+
+/* About us Section */
+#aboutus::before{
+    content: "";
+    position: fixed;
+    background: url('../images/about.jpg');
+    height: 120%;
+    width: 100%;
+    z-index: -5;
+    opacity: 0.99;
+}
+#aboutus h1{
+    color: black;
+    text-align: center;
+    font-family: 'Baloo Bhai';
+    z-index: 34;
+}
+
+#aboutus p{
+    color:darkgreen;
+    font-size: 0.98rem;
+    font-family: 'Bree Serif', serif;
+    z-index: 35;
+}
+
+body{
+    min-height: 100vh;
+}
+
+#container{
+    position: sticky;
+    color: white;
+    text-align: center;
+    font-size: 0.86rem;
+    margin-top: auto;
+    background: black;
+    padding-bottom: 14px;
+}
+
+
+
+
+
+
+
+
+
+    
+
+
